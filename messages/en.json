@@ -1,0 +1,19 @@
+{
+  "Meta": {
+    "title": "Polina Belash — Frontend Developer",
+    "description": "Frontend Developer (React, TypeScript) who ships faster with AI-assisted workflows."
+  },
+  "Header": {
+    "projects": "Projects",
+    "experience": "Experience",
+    "skills": "Skills",
+    "contacts": "Contacts"
+  },
+  "Hero": {
+    "status": "Open to work",
+    "title": "Frontend Developer (React, TypeScript) who ships faster with AI-assisted workflows",
+    "subtitle": "~3 years of commercial experience. Educational platforms, internal systems, product services.",
+    "contact": "Contact me",
+    "cv": "Download CV"
+  }
+}
