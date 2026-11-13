@@ -10,10 +10,10 @@ export function LanguageSwitch(): React.ReactElement {
   const pathname = usePathname();
   const router = useRouter();
 
-function change(next: Locale): void {
-  saveLocale(next);
-  router.replace(pathname, { locale: next });
-}
+  function change(next: Locale): void {
+    saveLocale(next);
+    router.replace(pathname, { locale: next });
+  }
 
   return (
     <div role="group" aria-label="Language" className="flex gap-1">

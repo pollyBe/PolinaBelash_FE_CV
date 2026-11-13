@@ -4,6 +4,8 @@
     "description": "Frontend Developer (React, TypeScript) who ships faster with AI-assisted workflows."
   },
   "Header": {
+    "name": "Polina Belash",
+    "navLabel": "Main navigation",
     "projects": "Projects",
     "experience": "Experience",
     "skills": "Skills",
@@ -14,6 +16,14 @@
     "title": "Frontend Developer (React, TypeScript) who ships faster with AI-assisted workflows",
     "subtitle": "~3 years of commercial experience. Educational platforms, internal systems, product services.",
     "contact": "Contact me",
-    "cv": "Download CV"
+    "cv": "Download CV",
+    "photoAlt": "Portrait of Polina Belash"
+  },
+  "Footer": {
+    "rights": "© 2026 Polina Belash",
+    "location": "Minsk, Belarus · open to remote (UTC+3)"
+  },
+  "ThemeSwitch": {
+    "label": "Toggle theme"
   }
 }

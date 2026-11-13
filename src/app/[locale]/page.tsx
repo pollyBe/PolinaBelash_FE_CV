@@ -1,5 +1,7 @@
-import { LanguageSwitch } from "@/components/layout/languageSwitch";
-import { setRequestLocale, getTranslations } from "next-intl/server";
+import { setRequestLocale } from "next-intl/server";
+import { Footer } from "@/components/layout/Footer";
+import { Header } from "@/components/layout/Header";
+import { Hero } from "@/components/sections/Hero";
 
 export default async function HomePage({
   params,
@@ -8,16 +10,14 @@ export default async function HomePage({
 }): Promise<React.ReactElement> {
   const { locale } = await params;
   setRequestLocale(locale);
-  const t = await getTranslations("Hero");
 
   return (
     <>
-      <LanguageSwitch />
-      <main className="mx-auto max-w-4xl px-5 py-20">
-        <p>{t("status")}</p>
-        <h1 className="mt-4 text-4xl font-semibold">{t("title")}</h1>
-        <p className="mt-4">{t("subtitle")}</p>
+      <Header />
+      <main>
+        <Hero />
       </main>
+      <Footer />
     </>
   );
 }
