@@ -10,6 +10,12 @@ export async function Header(): Promise<React.ReactElement> {
 
   return (
     <header className="sticky top-3 z-50 px-3 sm:px-5">
+      <a
+        href="#main"
+        className="bg-accent text-accent-foreground sr-only rounded-full px-4 py-2 font-medium focus:not-sr-only focus:absolute focus:top-0 focus:left-3"
+      >
+        {t("skipToContent")}
+      </a>
       <div className="border-border bg-background/80 mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-x-6 gap-y-2 rounded-2xl border px-4 py-2.5 backdrop-blur md:rounded-full md:px-6">
         <Link href="/" className="font-heading font-semibold">
           {t("name")}

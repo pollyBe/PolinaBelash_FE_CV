@@ -1,7 +1,8 @@
 {
   "Meta": {
     "title": "Polina Belash — Frontend Developer",
-    "description": "Frontend Developer (React, TypeScript) who ships faster with AI-assisted workflows"
+    "description": "Frontend Developer (React, TypeScript) who ships faster with AI-assisted workflows",
+    "ogImageAlt": "Polina Belash — Frontend Developer (React, TypeScript, Next.js)"
   },
   "Header": {
     "name": "Polina Belash",
@@ -9,7 +10,8 @@
     "projects": "Projects",
     "experience": "Experience",
     "skills": "Skills",
-    "contacts": "Contacts"
+    "contacts": "Contacts",
+    "skipToContent": "Skip to content"
   },
   "Hero": {
     "status": "Open to work",
@@ -55,6 +57,92 @@
       }
     }
   },
+  "Projects": {
+    "title": "Projects",
+    "stackLabel": "Stack",
+    "links": {
+      "live": "Website",
+      "liveAria": "{name}: open the website in a new tab",
+      "repo": "Code",
+      "repoAria": "{name}: open the source code on GitHub in a new tab"
+    },
+    "items": {
+      "sqlTrainee": {
+        "title": "SQL Trainee",
+        "context": "Aston · internal project",
+        "summary": "A platform for learning SQL: tasks by difficulty level, a query editor with a database schema view, exam mode and progress tracking",
+        "contribution": "Designed the architecture and a UI component library on Material UI, built Keycloak authentication with roles, plus light and dark themes. Cut task switching time to under 500 ms",
+        "images": {
+          "home": "SQL Trainee home page with task levels and progress",
+          "tasks": "Task list with statuses and difficulty",
+          "editor": "SQL query editor next to the database schema"
+        }
+      },
+      "kinopoisk": {
+        "title": "Kinopoisk clone",
+        "context": "Pet project",
+        "summary": "A movie and TV catalog built on the Kinopoisk API: collections, search with filters, movie and actor pages, favorites",
+        "contribution": "Feature-Sliced Design architecture, data via RTK Query, a serverless proxy on Vercel that keeps the API key private. Filters live in the URL, favorites sync across tabs, CI runs on GitHub Actions",
+        "images": {
+          "home": "Kinopoisk clone home page with popular movies"
+        }
+      },
+      "signlore": {
+        "title": "Signlore",
+        "context": "Human Apps",
+        "summary": "A scam text checker: users upload a screenshot of a suspicious message and get a breakdown of the risks",
+        "contribution": "Took the landing page from scratch to production and built onboarding flows for user activation",
+        "images": {
+          "home": "Signlore landing page hero"
+        }
+      },
+      "proboostica": {
+        "title": "Proboostica",
+        "context": "Human Apps",
+        "summary": "An Instagram growth service: packages of likes, followers and views",
+        "contribution": "Took the landing page from scratch to production. Realized authorization with user roles and a protected dashboard for users to track their orders and payments",
+        "images": {
+          "home": "Proboostica landing page hero"
+        }
+      },
+      "subtica": {
+        "title": "Subtica",
+        "context": "Human Apps",
+        "summary": "Analytics for iOS subscription apps: revenue, cohorts, LTV and AI forecasts",
+        "contribution": "Contributed to development: fixed bugs and improved data tables",
+        "images": {
+          "home": "Subtica website hero"
+        }
+      }
+    }
+  },
+  "AiWorkflow": {
+    "title": "AI workflow",
+    "intro": "I use Claude Code as part of my development process: it takes care of routine work, while I own the architecture, quality and outcome",
+    "practices": {
+      "editor": {
+        "title": "Claude Code in the editor",
+        "text": "Building UI from designs, MSW API mocks, refactoring and first drafts of tests"
+      },
+      "skills": {
+        "title": "Custom skills",
+        "text": "I turned recurring workflows into Claude Code skills: project deployment, code quality review and building sections from Figma designs"
+      },
+      "quality": {
+        "title": "Quality control",
+        "text": "Project rules live in AGENTS.md, and generated code goes through typecheck, linting and my review. This site was built the same way"
+      }
+    },
+    "terminal": {
+      "title": "claude — skills",
+      "command": "ls .claude/skills"
+    },
+    "skills": {
+      "deploy": "project deployment",
+      "cleanCode": "code quality review",
+      "figmaSection": "build a section from a Figma design"
+    }
+  },
   "Skills": {
     "title": "Skills",
     "groups": {
@@ -68,11 +156,58 @@
       "tools": "Tools"
     }
   },
+  "Education": {
+    "title": "Education",
+    "universityLabel": "University",
+    "coursesLabel": "Courses",
+    "languagesLabel": "Languages",
+    "university": {
+      "name": "Minsk State Linguistic University",
+      "faculty": "Faculty of English Language"
+    },
+    "courses": {
+      "aston": {
+        "school": "Aston",
+        "program": "React Frontend Developer"
+      },
+      "teachMeSkills": {
+        "school": "TeachMeSkills",
+        "program": "React Frontend Developer"
+      },
+      "rsSchool": {
+        "school": "RS School",
+        "program": "Frontend Development"
+      }
+    },
+    "languages": {
+      "english": {
+        "name": "English",
+        "level": "B2 (Upper-Intermediate)"
+      }
+    }
+  },
+  "Contacts": {
+    "title": "Contacts",
+    "intro": "Open to new opportunities, remote or on-site. The fastest way to reach me is Telegram",
+    "primary": "Message me on Telegram",
+    "cv": "Download CV",
+    "copy": "Copy email",
+    "copied": "Copied",
+    "links": {
+      "email": "Email",
+      "telegram": "Telegram",
+      "linkedin": "LinkedIn",
+      "github": "GitHub"
+    }
+  },
   "Footer": {
     "rights": "© 2026 Polina Belash",
     "location": "Minsk, Belarus · open to remote (UTC+3)"
   },
   "ThemeSwitch": {
     "label": "Toggle theme"
+  },
+  "LanguageSwitch": {
+    "label": "Language"
   }
 }

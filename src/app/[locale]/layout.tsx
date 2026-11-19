@@ -6,6 +6,7 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { routing } from "@/i18n/routing";
 import "../globals.css";
 import { ThemeProvider } from "@/components/layout/ThemeProvider";
+import { siteUrl } from "@/lib/site";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -36,7 +37,33 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "Meta" });
-  return { title: t("title"), description: t("description") };
+  const languages = Object.fromEntries(routing.locales.map((item) => [item, `/${item}`]));
+  const image = { url: "/og-image.jpg", width: 1200, height: 630, alt: t("ogImageAlt") };
+
+  return {
+    metadataBase: new URL(siteUrl),
+    title: t("title"),
+    description: t("description"),
+    alternates: {
+      canonical: `/${locale}`,
+      languages: { ...languages, "x-default": `/${routing.defaultLocale}` },
+    },
+    openGraph: {
+      type: "website",
+      url: `/${locale}`,
+      siteName: t("title"),
+      title: t("title"),
+      description: t("description"),
+      locale: locale === "ru" ? "ru_RU" : "en_US",
+      images: [image],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: t("title"),
+      description: t("description"),
+      images: [image],
+    },
+  };
 }
 
 export default async function LocaleLayout({

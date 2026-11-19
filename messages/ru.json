@@ -1,7 +1,8 @@
 {
   "Meta": {
     "title": "Полина Белаш — Frontend-разработчик",
-    "description": "Frontend-разработчик на React и TypeScript. Ускоряю разработку с помощью AI"
+    "description": "Frontend-разработчик на React и TypeScript. Ускоряю разработку с помощью AI",
+    "ogImageAlt": "Полина Белаш — Frontend-разработчик (React, TypeScript, Next.js)"
   },
   "ThemeSwitch": {
     "label": "Сменить тему"
@@ -12,7 +13,8 @@
     "projects": "Проекты",
     "experience": "Опыт",
     "skills": "Навыки",
-    "contacts": "Контакты"
+    "contacts": "Контакты",
+    "skipToContent": "Перейти к содержимому"
   },
   "Hero": {
     "status": "Открыта к предложениям",
@@ -58,6 +60,92 @@
       }
     }
   },
+  "Projects": {
+    "title": "Проекты",
+    "stackLabel": "Стек",
+    "links": {
+      "live": "Сайт",
+      "liveAria": "{name}: открыть сайт в новой вкладке",
+      "repo": "Код",
+      "repoAria": "{name}: открыть исходный код на GitHub в новой вкладке"
+    },
+    "items": {
+      "sqlTrainee": {
+        "title": "SQL Trainee",
+        "context": "Aston · внутренний проект",
+        "summary": "Платформа для обучения SQL: задачи по уровням сложности, редактор запросов со схемой базы данных, экзаменационный режим и отслеживание прогресса",
+        "contribution": "Спроектировала архитектуру и библиотеку UI-компонентов на Material UI, сделала авторизацию через Keycloak с ролями, светлую и тёмную темы. Сократила переключение между заданиями до менее 500 мс",
+        "images": {
+          "home": "Главная страница SQL Trainee с уровнями задач и прогрессом",
+          "tasks": "Список задач со статусами и сложностью",
+          "editor": "Редактор SQL-запроса рядом со схемой базы данных"
+        }
+      },
+      "kinopoisk": {
+        "title": "Kinopoisk clone",
+        "context": "Пет-проект",
+        "summary": "Каталог фильмов и сериалов на API Кинопоиска: подборки, поиск с фильтрами, страницы фильмов и актёров, избранное",
+        "contribution": "Архитектура по Feature-Sliced Design, данные через RTK Query, серверный прокси на Vercel скрывает API-ключ. Фильтры хранятся в URL, избранное синхронизируется между вкладками, CI в GitHub Actions",
+        "images": {
+          "home": "Главная страница Kinopoisk clone с подборкой популярных фильмов"
+        }
+      },
+      "signlore": {
+        "title": "Signlore",
+        "context": "Human Apps",
+        "summary": "Сервис проверки подозрительных сообщений: пользователь загружает скриншот и получает разбор признаков мошенничества",
+        "contribution": "Сделала лендинг с нуля до продакшена и онбординг-флоу для активации пользователей",
+        "images": {
+          "home": "Первый экран лендинга Signlore"
+        }
+      },
+      "proboostica": {
+        "title": "Proboostica",
+        "context": "Human Apps",
+        "summary": "Сервис продвижения в Instagram: пакеты лайков, подписчиков и просмотров",
+        "contribution": "Сделала лендинг с нуля до продакшена. Реализовала авторизацию с ролями пользователей и защищённую панель для отслеживания заказов и оплат",
+        "images": {
+          "home": "Первый экран лендинга Proboostica"
+        }
+      },
+      "subtica": {
+        "title": "Subtica",
+        "context": "Human Apps",
+        "summary": "Аналитика для iOS-приложений с подписками: выручка, когорты, LTV и AI-прогнозы",
+        "contribution": "Участвовала в разработке: исправляла баги и дорабатывала таблицы",
+        "images": {
+          "home": "Первый экран сайта Subtica"
+        }
+      }
+    }
+  },
+  "AiWorkflow": {
+    "title": "AI в работе",
+    "intro": "Использую Claude Code как часть процесса разработки: он берёт на себя рутину, а я отвечаю за архитектуру, качество и результат",
+    "practices": {
+      "editor": {
+        "title": "Claude Code в редакторе",
+        "text": "Вёрстка интерфейсов по макетам, API-моки на MSW, рефакторинг и черновики тестов"
+      },
+      "skills": {
+        "title": "Собственные skills",
+        "text": "Повторяющиеся процессы оформила в skills для Claude Code: развёртывание проекта, анализ чистоты кода и вёрстка секций по макетам из Figma"
+      },
+      "quality": {
+        "title": "Контроль качества",
+        "text": "Правила проекта описаны в AGENTS.md, а сгенерированный код проходит typecheck, линтер и моё ревью. Этот сайт сделан так же"
+      }
+    },
+    "terminal": {
+      "title": "claude — skills",
+      "command": "ls .claude/skills"
+    },
+    "skills": {
+      "deploy": "развёртывание проекта",
+      "cleanCode": "анализ чистоты кода",
+      "figmaSection": "вёрстка секции по макету из Figma"
+    }
+  },
   "Skills": {
     "title": "Навыки",
     "groups": {
@@ -71,8 +159,55 @@
       "tools": "Инструменты"
     }
   },
+  "Education": {
+    "title": "Образование",
+    "universityLabel": "Университет",
+    "coursesLabel": "Курсы",
+    "languagesLabel": "Языки",
+    "university": {
+      "name": "Минский государственный лингвистический университет",
+      "faculty": "Факультет английского языка"
+    },
+    "courses": {
+      "aston": {
+        "school": "Aston",
+        "program": "React Frontend Developer"
+      },
+      "teachMeSkills": {
+        "school": "TeachMeSkills",
+        "program": "React Frontend Developer"
+      },
+      "rsSchool": {
+        "school": "RS School",
+        "program": "Frontend Development"
+      }
+    },
+    "languages": {
+      "english": {
+        "name": "Английский",
+        "level": "B2"
+      }
+    }
+  },
+  "Contacts": {
+    "title": "Контакты",
+    "intro": "Открыта к предложениям: удалённо или в офисе. Быстрее всего отвечаю в Telegram",
+    "primary": "Написать в Telegram",
+    "cv": "Скачать CV",
+    "copy": "Скопировать email",
+    "copied": "Скопировано",
+    "links": {
+      "email": "Почта",
+      "telegram": "Telegram",
+      "linkedin": "LinkedIn",
+      "github": "GitHub"
+    }
+  },
   "Footer": {
     "rights": "© 2026 Polina Belash",
     "location": "Минск · готова к удалённой работе"
+  },
+  "LanguageSwitch": {
+    "label": "Язык"
   }
 }

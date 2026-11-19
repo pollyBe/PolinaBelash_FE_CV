@@ -46,7 +46,7 @@ export async function Experience(): Promise<React.ReactElement> {
                 </p>
               </header>
 
-              <ul className="marker:text-accent mt-4 max-w-[65ch] list-disc space-y-2 pl-5">
+              <ul className="marker:text-accent mt-4 max-w-prose list-disc space-y-2 pl-5">
                 {job.points.map((point) => (
                   <li key={point}>
                     {t.rich(`items.${job.id}.points.${point}`, {

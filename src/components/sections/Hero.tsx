@@ -13,18 +13,18 @@ export async function Hero(): Promise<React.ReactElement> {
   const locale = await getLocale();
 
   return (
-    <section className="mx-auto grid max-w-6xl gap-8 px-5 pt-12 pb-20 md:grid-cols-[1.25fr_1fr] md:items-center md:gap-14 md:pt-20">
+    <section className="mx-auto grid max-w-6xl gap-8 px-5 pt-12 pb-10 md:grid-cols-[1.25fr_1fr] md:items-center md:gap-14 md:pt-20 md:pb-14">
       <div className="order-2 md:order-1">
         <p className="border-border text-muted inline-flex items-center gap-2 rounded-full border px-3 py-1 font-mono text-xs">
           <span className="bg-accent size-2 rounded-full" aria-hidden="true" />
           {t("status")}
         </p>
 
-        <h1 className="font-heading mt-6 max-w-[26ch] text-3xl font-semibold tracking-tight md:text-4xl lg:text-5xl">
+        <h1 className="font-heading mt-6 max-w-2xl text-3xl font-semibold tracking-tight md:text-4xl lg:text-5xl">
           {t("title")}
         </h1>
 
-        <p className="text-muted mt-5 max-w-[60ch] text-lg">{t("subtitle")}</p>
+        <p className="text-muted mt-5 max-w-prose text-lg">{t("subtitle")}</p>
 
         <div className="mt-8 flex flex-col gap-3 sm:flex-row">
           <a
