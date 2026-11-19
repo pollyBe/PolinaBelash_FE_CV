@@ -3,7 +3,7 @@ import { Link } from "@/i18n/navigation";
 import { LanguageSwitch } from "./LanguageSwitch";
 import { ThemeSwitch } from "./ThemeSwitch";
 
-const sections = ["projects", "experience", "skills", "contacts"] as const;
+const sections = ["experience", "projects", "skills", "contacts"] as const;
 
 export async function Header(): Promise<React.ReactElement> {
   const t = await getTranslations("Header");

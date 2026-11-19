@@ -1,7 +1,7 @@
 {
   "Meta": {
     "title": "Polina Belash — Frontend Developer",
-    "description": "Frontend Developer (React, TypeScript) who ships faster with AI-assisted workflows."
+    "description": "Frontend Developer (React, TypeScript) who ships faster with AI-assisted workflows"
   },
   "Header": {
     "name": "Polina Belash",
@@ -14,10 +14,59 @@
   "Hero": {
     "status": "Open to work",
     "title": "Frontend Developer (React, TypeScript) who ships faster with AI-assisted workflows",
-    "subtitle": "~3 years of commercial experience. Educational platforms, internal systems, product services.",
+    "subtitle": "~3 years of commercial experience. Educational platforms, internal systems, product services",
     "contact": "Contact me",
     "cv": "Download CV",
     "photoAlt": "Portrait of Polina Belash"
+  },
+  "Experience": {
+    "title": "Experience",
+    "period": "<start></start> — <end></end>",
+    "stackLabel": "Stack",
+    "items": {
+      "humanApps": {
+        "company": "Human Apps",
+        "role": "Frontend Developer",
+        "points": {
+          "anonymousView": "Built a React and TypeScript feature for viewing an account page, posts and stories anonymously, without revealing the user's identity",
+          "landings": "Took landing pages from scratch to production on Next.js (Signlore, Proboostica) and built onboarding flows for Signlore",
+          "analytics": "Integrated Amplitude product analytics and set up user event tracking",
+          "ai": "Sped up development with Claude Code in the editor and wrote custom skills for it: project deployment, code quality review and pixel-accurate section layout from Figma"
+        }
+      },
+      "aston": {
+        "company": "Aston",
+        "role": "Frontend Developer",
+        "points": {
+          "sqlApp": "Built an SPA for learning SQL with React, TypeScript and Vite; designed the component architecture and a reusable UI library on Material UI",
+          "auth": "Implemented Keycloak authentication, roles and protected routing; set up state management with Redux Toolkit and Redux Persist",
+          "performance": "Cut the time to switch between tasks from several seconds to <b>under 500 ms</b>",
+          "quality": "Set up Storybook, ESLint, Stylelint and Husky; added light and dark themes"
+        }
+      },
+      "freelance": {
+        "company": "Freelance",
+        "role": "Frontend Developer",
+        "points": {
+          "apps": "Built React apps and responsive landing pages for small businesses with TypeScript, SCSS and Styled Components",
+          "refactoring": "Refactored existing projects, fixed bugs and shipped new features; integrated REST APIs and contact forms",
+          "tests": "Covered key components with unit tests using Jest and React Testing Library"
+        }
+      }
+    }
+  },
+  "Skills": {
+    "title": "Skills",
+    "groups": {
+      "frontend": "Frontend",
+      "state": "State & data",
+      "styling": "UI & styling",
+      "forms": "Forms & routing",
+      "testing": "Testing",
+      "analytics": "Analytics & i18n",
+      "ai": "AI tools",
+      "tools": "Tools"
+    }
   },
   "Footer": {
     "rights": "© 2026 Polina Belash",
