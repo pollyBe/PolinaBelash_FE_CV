@@ -6,7 +6,7 @@ Bilingual (ru/en) personal portfolio site. Next.js App Router, TypeScript, Tailw
 
 - All user-facing text lives in `messages/ru.json` and `messages/en.json`. No hardcoded strings in components.
 - Every new key is added to both languages in the same change.
-- Project card data lives in `content/projects.ts`. Adding a project must not require markup changes.
+- Project card data lives in `src/content/projects.ts`. Adding a project must not require markup changes.
 
 ## Structure
 
@@ -16,7 +16,7 @@ Bilingual (ru/en) personal portfolio site. Next.js App Router, TypeScript, Tailw
 
 ## Styling
 
-- Colors, fonts and radii come only from design tokens in `src/styles/globals.css`. No raw hex values in components.
+- Colors, fonts and radii come only from design tokens in `src/app/globals.css`. No raw hex values in components.
 - Mobile-first. Text width is capped at about 65 characters.
 - Light and dark themes must both work. Every text color needs at least 4.5:1 contrast on its background.
 
